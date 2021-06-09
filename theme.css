@@ -1,0 +1,61 @@
+@import url('https://mwittrien.github.io/BetterDiscordAddons/Themes/DiscordRecolor/DiscordRecolor.css');
+
+:root {
+  --accentcolor: 0,0,0;
+  --accentcolor2: 235,69,158;
+  --linkcolor: 0,184,255;
+  --mentioncolor: 255,255,255;
+  --textbrightest: 255,255,255;
+  --textbrighter: 222,222,222;
+  --textbright: 185,185,185;
+  --textdark: 140,140,140;
+  --textdarker: 115,115,115;
+  --textdarkest: 80,80,80;
+  --font: 0;
+  --backgroundaccent: 45,45,45;
+  --backgroundprimary: 22,22,22;
+  --backgroundsecondary: 22,22,22;
+  --backgroundsecondaryalt: 42,42,42;
+  --backgroundtertiary: 0,0,0;
+  --backgroundfloating: 22,24,25;
+  --settingsicons: 0;
+}
+a[href^="http://"] {
+  color: #ed4245;
+}
+a[href^="https://"] {
+  color: #57F287;
+}
+/* Font */
+@font-face {
+  font-family: 'Discord';
+  font-weight: 700;
+  src: url("https://raw.githubusercontent.com/powercord-org/powercord-backend/my-awesome-branch/web/src/assets/discord-font.otf") format("opentype");
+}
+/* Wordmark */
+.wordmark-2iDDfm:after {
+  content: "Discord";
+  font-size: 15px;
+  position: absolute;
+  width: 4000px;
+  top: 5px;
+  padding-left: -3px;
+  font-family: 'Discord';
+  color: var(--text-muted);
+}
+.wordmark-2iDDfm > svg {
+  width: 0px;
+}
+/** Add icon to wordmark **/
+.wordmark-2iDDfm {
+  left: 25px;
+}
+.wordmark-2iDDfm:before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 50px;
+  bottom: 0;
+  right: 0;
+  background: url('https://raw.githubusercontent.com/powercord-org/powercord-backend/my-awesome-branch/packages/web/src/assets/powercord.svg') center/20px no-repeat; /* Change the URL here to change the displayed icon */
+}
